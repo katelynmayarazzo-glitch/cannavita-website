@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Área do Cliente | Cannavita</title>
+  <meta name="description" content="Conheça a experiência demonstrativa de produtos da Cannavita.">
+  <meta name="theme-color" content="#10271d">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon-cannavita.jpg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cliente.css">
+  <script src="cliente.js" defer></script>
+</head>
+
+<body>
+  <div class="demo-notice">
+    EXPERIÊNCIA ACADÊMICA DEMONSTRATIVA · SEM VENDAS REAIS
+  </div>
+
+  <header class="shop-header">
+    <a class="brand" href="cliente.html" aria-label="Cannavita - início da loja">
+      <img src="assets/images/logo-cannavita.jpg.png" alt="Cannavita">
+    </a>
+
+    <nav class="shop-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Nossa essência</a>
+    </nav>
+
+    <button class="cart-toggle" id="openCart" type="button">
+      <span aria-hidden="true">🛍</span>
+      Minha sacola
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="shop-hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">BEM-VINDO À CANNAVITA</span>
+        <h1>Cuidado e informação em cada <span>escolha.</span></h1>
+        <p>
+          Explore nossa proposta, conheça os produtos conceituais
+          e descubra uma experiência pensada para ser simples,
+          acolhedora e transparente.
+        </p>
+        <a class="button button-primary" href="#produtos">
+          Explorar produtos <span aria-hidden="true">↗</span>
+        </a>
+        <p class="hero-note">
+          Projeto acadêmico. Produtos e preços apresentados apenas para demonstração.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="assets/images/produtos.jpg.png"
+          alt="Imagem ilustrativa da proposta visual de produtos Cannavita"
+        >
+        <div class="image-caption">
+          <span>Conheça a proposta</span>
+          <span>Ciência, cuidado e informação.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-strip" aria-label="Valores da Cannavita">
+      <div><span>✳</span> Informação responsável</div>
+      <div><span>✳</span> Transparência</div>
+      <div><span>✳</span> Experiência acolhedora</div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE A CANNAVITA</span>
+          <h2>Conheça nossa linha</h2>
+          <p>Explore os produtos conceituais desenvolvidos para este projeto.</p>
+        </div>
+        <span class="product-total">03 produtos demonstrativos</span>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="assets/images/oleo-cannavita.jpg.png"
+              alt="Imagem ilustrativa do óleo Cannavita"
+            >
+            <span class="product-tag">Conceito 01</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">LINHA CANNAVITA</span>
+            <h3>Óleo Cannavita</h3>
+            <p>
+              Apresentação conceitual de produto, com foco em informação
+              clara e identidade visual.
+            </p>
+            <div class="product-bottom">
+              <div>
+                <span class="price-label">Preço ilustrativo</span>
+                <strong>R$ 89,90</strong>
+              </div>
+              <button class="button button-add" data-add="oleo" type="button">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="assets/images/creme-cannavita.jpg.png"
+              alt="Imagem ilustrativa de creme Cannavita"
+            >
+            <span class="product-tag">Conceito 02</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">LINHA CANNAVITA</span>
+            <h3>Creme Cannavita</h3>
+            <p>
+              Proposta visual para apresentação de produto e exploração
+              da experiência de navegação.
+            </p>
+            <div class="product-bottom">
+              <div>
+                <span class="price-label">Preço ilustrativo</span>
+                <strong>R$ 69,90</strong>
+              </div>
+              <button class="button button-add" data-add="creme" type="button">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img
+              src="assets/images/pomada-cannavita2.jpg.png"
+              alt="Imagem ilustrativa da linha de produtos Cannavita"
+            >
+            <span class="product-tag">Conceito 03</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">LINHA CANNAVITA</span>
+            <h3>Pomada Cannavita</h3>
+            <p>
+              Conceito de apresentação de produto, com informações
+              transparentes e comunicação responsável.
+            </p>
+            <div class="product-bottom">
+              <div>
+                <span class="price-label">Preço ilustrativo</span>
+                <strong>R$ 59,90</strong>
+              </div>
+              <button class="button button-add" data-add="pomada" type="button">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-section" id="sobre">
+      <div class="brand-image">
+        <img
+          src="assets/images/cuidado-cannavita.jpg.png"
+          alt="Imagem ilustrativa da identidade visual Cannavita"
+        >
+      </div>
+      <div class="brand-copy">
+        <span class="eyebrow">NOSSA ESSÊNCIA</span>
+        <h2>Uma experiência guiada por informação e confiança.</h2>
+        <p>
+          A Cannavita é uma proposta acadêmica de marca voltada à
+          comunicação responsável no segmento de saúde e bem-estar
+          terapêutico.
+        </p>
+        <p>
+          Acreditamos que uma boa experiência começa com informação
+          acessível, transparência e respeito às decisões de cada pessoa.
+        </p>
+        <a href="index.html" class="text-link">
+          Conheça o projeto completo <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <span class="eyebrow">SUA EXPERIÊNCIA CANNAVITA</span>
+      <h2>Conhecer também é uma forma de se aproximar.</h2>
+      <p>
+        Explore a proposta da marca e experimente as funcionalidades
+        demonstrativas desta área.
+      </p>
+      <button class="button button-primary" id="closingCart" type="button">
+        Ver minha sacola
+      </button>
+    </section>
+  </main>
+
+  <footer class="shop-footer">
+    <a href="index.html">← Voltar à apresentação institucional</a>
+    <p>© <span id="currentYear"></span> Cannavita · Projeto acadêmico.</p>
+    <p>
+      Produtos, preços e funcionalidades de compra são ilustrativos.
+      Esta página não realiza vendas nem oferece orientação médica.
+    </p>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+
+  <aside
+    class="cart-panel"
+    id="cartPanel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cartTitle"
+    aria-hidden="true"
+    inert
+  >
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow">SUA SELEÇÃO</span>
+        <h2 id="cartTitle">Minha sacola</h2>
+      </div>
+      <button class="close-cart" id="closeCart" type="button" aria-label="Fechar sacola">
+        ×
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems" aria-live="polite"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <span class="empty-icon" aria-hidden="true">🛍</span>
+      <h3>Sua sacola está vazia</h3>
+      <p>Explore os produtos e adicione seus favoritos para experimentar o carrinho.</p>
+      <button class="button button-primary" id="continueShopping" type="button">
+        Explorar produtos
+      </button>
+    </div>
+
+    <div class="cart-summary" id="cartSummary" hidden>
+      <div class="summary-line">
+        <span>Subtotal ilustrativo</span>
+        <strong id="cartSubtotal">R$ 0,00</strong>
+      </div>
+      <p class="demo-disclaimer">
+        Simulação acadêmica. Nenhuma cobrança será realizada.
+      </p>
+      <button class="button button-primary checkout-button" id="checkoutButton" type="button">
+        Simular finalização
+      </button>
+      <button class="text-link continue-link" id="continueLink" type="button">
+        Continuar explorando
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutModal" hidden>
+    <section
+      class="checkout-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="checkoutTitle"
+    >
+      <button class="close-cart modal-close" id="closeCheckout" type="button" aria-label="Fechar">
+        ×
+      </button>
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <span class="eyebrow">SIMULAÇÃO CONCLUÍDA</span>
+      <h2 id="checkoutTitle">Você vivenciou a jornada de compra!</h2>
+      <p>
+        Esta é uma confirmação demonstrativa do projeto acadêmico Cannavita.
+        Nenhum pedido real foi realizado e nenhum pagamento foi processado.
+      </p>
+      <button class="button button-primary" id="finishDemo" type="button">
+        Voltar à loja
+      </button>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
